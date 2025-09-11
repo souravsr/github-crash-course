@@ -1,0 +1,51 @@
+Git and Github Notes
+
+- Git is a version control system (Open source, maintained by Linux foundation)
+- Github is repository management platform (owned by Microsoft)
+- git init
+- git status
+
+- git add
+	- this command adds the files to staging area from the working directory
+	- doesn't mean it has been added to the repository 
+
+- git commit
+	- adds the changes from staging area (after git add) to the repository
+	- this simply means we've informed Git about specific changes to files
+	- we can go back to previous commit
+	- a git commit doesn't just pertain to saving a changes in a single file. It can constitute specific changes across an entire 	  working directory (git init wala directory)
+	- adds the changes to the log file
+	- usually done with messages to help understand what/why was done 
+
+- git remote -v
+	- check remote branches using this command
+	- if run on cloned repo, URL of remote branch is shown
+	- if no connection to remote branch, then there won't be any URL
+	- we tell git to add a remote branch using remote command
+		-> git remote add name URL.git
+	- by convention, we call this remote branch the ORIGIN branch
+		-> git remote add origin url.git
+		-> this would need authorisation simple way is to use personal access token(PAT) 
+		-> e.g. git remote add origin https://PAT@URL.git
+ 	- to rename: git remote rename <old> <new>
+	- to remove: git remote remove <name>
+
+- git push
+	- once we've connected to our remote branch on Github, we can push our code to the remote branch.
+	- we tell git to push to the remote main/master branch called origin with 
+		-> git push -u origin main/master
+- git pull
+	- fetches and sync the files from the repository to local work directory
+	- this one merges the files/ changes from the remote repo to the local working directory 
+	- any changes done into the remote repo will be applied to the local repo with this command.
+
+-git fetch
+	- will download changes from the Github remote repo, however we will not see those changes be part of the files in the 
+	  working directory
+	- fetch allows to grab additional work done on the remote master/main branch, without needing to merge it in working directory
+	- git fetch <remote> <branch>
+	- git fetch origin <branch> 
+
+- git log
+	- The git log command shows a list of all the commits made to a repository, including the hash, message, and metadata
+	- simply we can think of it as the history of a repo
