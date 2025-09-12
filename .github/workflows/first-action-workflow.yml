@@ -1,0 +1,10 @@
+name: First Workflow
+
+on: workflow_dispatch #this allows to manually start this workflow, not triggered automatically.
+
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      -name: Print Grettings
+      run: echo "Hey There!"
