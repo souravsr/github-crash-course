@@ -7,4 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print Grettings
-        run: echo "Hey There"
+        run: echo "Hey There!"
+
+      - name: Second step
+        run: echo "See you soon!"
