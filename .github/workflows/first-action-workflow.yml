@@ -13,7 +13,7 @@ jobs:
         run: npm ci
       - name: Upload artifacts
         #Actions to upload the artifact file
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: save-artifact
           #Using the '|' we can giv muliline commands to run
