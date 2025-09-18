@@ -18,7 +18,7 @@ jobs:
           #  package.json
   deploy:
     needs: test
-    runs-on: ububtu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Deploy
         run: echo "Deploying....."
