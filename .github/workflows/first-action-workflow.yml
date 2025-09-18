@@ -11,6 +11,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: save-artifact
+          path: temp
           #Using the '|' we can giv muliline commands to run
           #path: |
           #  dist
