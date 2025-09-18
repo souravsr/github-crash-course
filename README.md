@@ -1,2 +1,13 @@
-# Repo to practice Git and github
-I am learning to build CI/CD pipeline using Github Actions
+# Github Actions Notes
+- Key elements/ componenets of Github Actions
+    - Workflows:
+        - attached to a GitHub repository
+        - contains one or more Jobs
+        - Triggered upon certain Events
+    - Jobs:
+        - denine a Runner (execution environment)
+    - Steps:
+- There are many templets available for use on the Github, we can either use those or even create new workflow from scratch
+- Example of a workflow
+    - Uses yaml file, so need to properlt indent as this works on indentation
+    - name: name of the workflow (reserved keyword)
