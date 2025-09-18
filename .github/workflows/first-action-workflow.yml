@@ -1,16 +1,11 @@
-name: First Workflow
-on:
-  push:
-    branches:
-      - main      
+name: Practice Workflow
+on: push
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
       - name: Get Code
         uses: actions/checkout@v3  
-      - name: Install depenndencies
-        run: npm ci
       - name: Upload artifacts
         #Actions to upload the artifact file
         uses: actions/upload-artifact@v4
