@@ -51,7 +51,7 @@ jobs:
       #name of second step  
       - name: Install NodeJS
         #another existing Actions
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           #specifying version to install
           node-version: 18
